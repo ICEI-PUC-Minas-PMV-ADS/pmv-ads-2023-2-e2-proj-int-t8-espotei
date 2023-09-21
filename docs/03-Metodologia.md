@@ -1,77 +1,26 @@
-
 # Metodologia
 
-<span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Documentação de Especificação</a></span>
+A metodologia contempla as definições de ferramental utilizado pela equipe tanto para a manutenção dos códigos e demais artefatos quanto para a organização do time na execução das tarefas do projeto. Estas ferramentas visam separar e construir cada parte do projeto em determinada ferramenta que se adeque melhor e função, para unificação dos artefatos produzidos no complemento do projeto final.
 
-Descreva aqui a metodologia de trabalho do grupo para atacar o problema. Definições sobre os ambiente de trabalho utilizados pela  equipe para desenvolver o projeto. Abrange a relação de ambientes utilizados, a estrutura para gestão do código fonte, além da definição do processo e ferramenta através dos quais a equipe se organiza (Gestão de Times).
+## Relação de Ambientes de Trabalho
+Os artefatos do projeto são desenvolvidos a partir de diversas plataformas e a relação dos ambientes com seu respectivo propósito é apresentada na tabela que se segue. 
 
-## Controle de Versão
+Ambiente | Plataforma | Link
+--------- | ---------- | ----
+Repositório de código fonte | GitHub | https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t8-espotei
+Projeto de Interface e  Wireframes | MarvelApp | https://marvelapp.com/prototype/f0i0dg8/screen/92732763
+Gerenciamento do Projeto | Notion | https://www.notion.so/99bd527dfe4d4278a3b4cebfead0be68?v=8b5dfed128e74ef29d48c43daefa3c25&pvs=4
 
-A ferramenta de controle de versão adotada no projeto foi o
-[Git](https://git-scm.com/), sendo que o [Github](https://github.com)
-foi utilizado para hospedagem do repositório.
+## Gerenciamento do projeto
 
-O projeto segue a seguinte convenção para o nome de branches:
+O projeto se utilizará da metodologia ágil Scrum, implementando sprints com duração de uma semana em média. A ferramenta utilizada para planejar e documentar as sprints é o Notion, conforme descrito na tabela anterior. As sprints serão planejadas com base nas tarefas do backlog e, ao final de cada sprint, se fará uma revisão para acompanhar o desenvolvimento do produto final.
 
-- `main`: versão estável já testada do software
-- `unstable`: versão já testada do software, porém instável
-- `testing`: versão em testes do software
-- `dev`: versão de desenvolvimento do software
+No GitHub, utilizaremos uma estrutura de monorepo, onde tanto o backend quanto o frontend estarão publicados sob o mesmo repositório. Haverá a branch main, onde constará a versão de produção do projeto, e as demais branches seguirão o modelo de feature/fix branches, onde cada branch será criada e nomeada de acordo com o seu propósito.
 
-Quanto à gerência de issues, o projeto adota a seguinte convenção para
-etiquetas:
+As tarefas serão divididas por sprint de acordo com a necessidade, a fim de que todos os integrantes do projeto possam atuar em todas as frentes do sistema, tanto na documentação quanto no desenvolvimento front-end e back-end.
 
-- `documentation`: melhorias ou acréscimos à documentação
-- `bug`: uma funcionalidade encontra-se com problemas
-- `enhancement`: uma funcionalidade precisa ser melhorada
-- `feature`: uma nova funcionalidade precisa ser introduzida
+O backlog atual do projeto, bem como a roadmap de sprints podem ser visualizados nas figuras abaixo.
 
-Discuta como a configuração do projeto foi feita na ferramenta de versionamento escolhida. Exponha como a gerência de tags, merges, commits e branchs é realizada. Discuta como a gerência de issues foi realizada.
+![Backlog inicial](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t8-espotei/assets/61216649/cda63e7e-2bf1-45f8-97f7-6ed54035e725)
 
-> **Links Úteis**:
-> - [Tutorial GitHub](https://guides.github.com/activities/hello-world/)
-> - [Git e Github](https://www.youtube.com/playlist?list=PLHz_AreHm4dm7ZULPAmadvNhH6vk9oNZA)
->  - [Comparando fluxos de trabalho](https://www.atlassian.com/br/git/tutorials/comparing-workflows)
-> - [Understanding the GitHub flow](https://guides.github.com/introduction/flow/)
-> - [The gitflow workflow - in less than 5 mins](https://www.youtube.com/watch?v=1SXpE08hvGs)
-
-## Gerenciamento de Projeto
-
-### Divisão de Papéis
-
-Apresente a divisão de papéis entre os membros do grupo.
-
-> **Links Úteis**:
-> - [11 Passos Essenciais para Implantar Scrum no seu 
-> Projeto](https://mindmaster.com.br/scrum-11-passos/)
-> - [Scrum em 9 minutos](https://www.youtube.com/watch?v=XfvQWnRgxG0)
-
-### Processo
-
-Coloque  informações sobre detalhes da implementação do Scrum seguido pelo grupo. O grupo poderá fazer uso de ferramentas on-line para acompanhar o andamento do projeto, a execução das tarefas e o status de desenvolvimento da solução.
- 
-> **Links Úteis**:
-> - [Project management, made simple](https://github.com/features/project-management/)
-> - [Sobre quadros de projeto](https://docs.github.com/pt/github/managing-your-work-on-github/about-project-boards)
-> - [Como criar Backlogs no Github](https://www.youtube.com/watch?v=RXEy6CFu9Hk)
-> - [Tutorial Slack](https://slack.com/intl/en-br/)
-
-### Ferramentas
-
-As ferramentas empregadas no projeto são:
-
-- Editor de código.
-- Ferramentas de comunicação
-- Ferramentas de desenho de tela (_wireframing_)
-
-O editor de código foi escolhido porque ele possui uma integração com o
-sistema de versão. As ferramentas de comunicação utilizadas possuem
-integração semelhante e por isso foram selecionadas. Por fim, para criar
-diagramas utilizamos essa ferramenta por melhor captar as
-necessidades da nossa solução.
-
-Liste quais ferramentas foram empregadas no desenvolvimento do projeto, justificando a escolha delas, sempre que possível.
- 
-> **Possíveis Ferramentas que auxiliarão no gerenciamento**: 
-> - [Slack](https://slack.com/)
-> - [Github](https://github.com/)
+![Roadmap do projeto](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t8-espotei/assets/61216649/c13b5470-02e6-4218-babb-82a33cb758b6)
