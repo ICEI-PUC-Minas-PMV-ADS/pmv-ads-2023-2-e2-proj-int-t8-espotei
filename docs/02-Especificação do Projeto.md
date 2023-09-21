@@ -32,37 +32,44 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 ### Requisitos Funcionais
 
-|ID    | Descrição do Requisito  | Prioridade |
-|------|-----------------------------------------|----|
-|RF-001| O site deverá possuir sistema de login OAuth | ALTA | 
-|RF-002| O site deverá ter integração com a API do Spotify | ALTA |
-|RF-003| O site deverá trazer recomendações de músicas ao usuário, baseadas nas preferências do mesmo | ALTA |
-|RF-004| O site deverá trazer métricas a respeito dos gêneros e tipos de músicas preferenciais do usuário | MÉDIA |
+ID | Descrição | Prioridade
+---|-----------|-----------
+RF-01 | O sistema deve permitir ao usuário cadastrar uma conta | Alta
+RF-02 | O sistema deve permitir ao usuário fazer login via email e senha | Alta
+RF-03 | O sistema deve permitir ao usuário recuperar sua senha | Média
+RF-04 | O sistema deve recomendar músicas ao usuário | Alta
+RF-05 | O sistema deve recomendar artistas ao usuário | Média
+RF-06 | O sistema deve recomendar playlists e mixes de música ao usuário | Baixa
+RF-07 | O sistema deverá mostrar as preferências musicais dos amigos do usuário | Média
+RF-08 | O sistema deverá trazer o top 5 músicas mais escutadas pelo usuário em um dado intervalo de tempo | Alta
+RF-09 | O sistema deve ser capaz de coletar dados de uso do Spotify | Alta
+RF-10 | O sistema deve permitir ao usuário fazer login via rede social | Alta
 
 ### Requisitos não Funcionais
 
-|ID     | Descrição do Requisito  |Prioridade |
-|-------|-------------------------|----|
-|RNF-001| O frontend deve ser publicado em um ambiente acessível publicamente na Internet | ALTA | 
-|RNF-002| O backend deve ser ter seus endpoints disponibilizados em um ambiente acessível publicamente na Internet | MÉDIA |
-|RNF-003| O sistema utilizará uma plataforma de Database as a Service em cloud | MÉDIA |
+ID | Descrição | Prioridade
+---|-----------|-----------
+RNF-01 | O sistema deve estar disponível 24 horas por dia, 7 dias por semana | Alta
+RNF-02 | O sistema deve suportar picos de tráfego sem cair | Alta
+RNF-03 | O sistema deve suportar ao menos 1000 usuários simultâneos | Alta
+RNF-04 | O sistema deve implementar fontes, cores e tamanhos visando um contraste aceitável e adequação aos padrões W3C de acessibilidade | Alta
+RNF-05 | O sistema deve ter interface responsiva para dispositivos móveis | Alta
+RNF-06 | As telas do sistema devem ter tempo de carregamento de, no máximo, 5 segundos | Alta
+RNF-07 | O sistema se aproveitará de um serviço Database as a Service | Alta
+RNF-08 | O sistema deverá ter interface web desenvolvida em React | Alta
+RNF-09 | O sistema deve salvar chaves privadas de acesso a APIs em variáveis de ambientes escondidas | Alta
+RNF-10 | As informações cadastrais do usuário devem ser de visualização única do administrador do banco de dados | Alta
 
 ## Restrições
 
 O projeto está restrito pelos itens apresentados na tabela a seguir.
 
-|ID| Restrição                                             |
-|--|-------------------------------------------------------|
-|01| O projeto deverá ser entregue no final do semestre letivo (eixo 2) |
-|02| O projeto deverá ser feito utilizando os frameworks da linguagem C# no backend |
-|03| O projeto deverá persistir os dados utilizando um banco de dados relacional
-
-
-Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
-
-> **Links Úteis**:
-> - [O que são Requisitos Funcionais e Requisitos Não Funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)
-> - [O que são requisitos funcionais e requisitos não funcionais?](https://analisederequisitos.com.br/requisitos-funcionais-e-requisitos-nao-funcionais-o-que-sao/)
+ID | Descrição
+---|-----------
+RE-01 | O projeto deverá ser entregue no final do semestre letivo (eixo 2).
+RE-02 | O backend do projeto deverá ser desenvolvido utilizando C# .NET
+RE-03 | O projeto deverá persistir os dados em um banco de dados relacional (SQL Server)
+RE-04 | O projeto deverá ser hospedado em plataformas gratuitas e disponibilizado publicamente na internet
 
 ## Diagrama de Casos de Uso
 
