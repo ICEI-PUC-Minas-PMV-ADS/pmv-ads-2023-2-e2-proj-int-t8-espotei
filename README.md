@@ -1,24 +1,24 @@
-# Projeto Espotei
+# Espotei
 
 `Análise e Desenvolvimento de Sistemas`
 
 `Projeto: Desenvolvimento de uma Aplicação Interativa`
 
-`2º semestre`
+`Eixo 2`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+O Projeto visa o desenvolvimento de uma aplicação integrada ao Spotify, com o "Espotei" você poderá; Descobrir quais são as suas músicas mais ouvidas, informações sobre as músicas mais ouvidas pelos usuários da plataforma, receber novas sugestões de músicas.
 
 ## Integrantes
 
 * Aaron Carvalho Balbino
 * Arthur Alves de Souza Costa
-* Juan Pereira Alves Andrade
-* Daphine Custódia de Almeida
 * Caio Augusto de Carvalho Rosa
+* Daphine Custódia de Almeida
+* Juan Pereira Alves Andrade
 
 ## Orientador
 
-* Nome completo do professor 1
+Bernardo Jeunon de Alencar
 
 ## Instruções de utilização
 
