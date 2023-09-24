@@ -1,46 +1,36 @@
 # Introdução
 
-Texto descritivo com a visão geral do projeto abordado. Inclui o contexto, o problema, os objetivos, a justificativa e o público-alvo do projeto.
+Rádios, vitrolas, de vinis à cds. Em diferentes formatos, a música sempre esteve presente no cotidiano das pessoas da nossa sociedade. 
+Avançando junto a tecnologia, o acesso a música através dos anos se tornou cada vez mais fácil e democrático, e atualmente vivemos a era do streaming.
+
+A um clique de distância, milhares de músicas compõem catálogos de diversos aplicativos de streaming. Sendo separadas através de playlists pagas, ou organizadas através de “charts” que classificam as músicas de acordo com as mais ouvidas, muitas vezes tantas opções podem levar o usuário a uma experiência limitada, seja por se ver perdido a um catálogo tão extenso e acabar optando por ouvir as mesmas coisas de sempre, ou por ser influenciado através do algoritmo que indica artistas através de popularidade.
+
+Tendo em vista isso, vê-se necessário uma experiência personalizada de forma individual aos usuários desses aplicativos, para que possam aproveitar de forma mais significativa o extenso catálogo e possam vir a consumir novos artistas e álbuns. 
+
 
 ## Problema
-Nesse momento você deve apresentar o problema que a sua aplicação deve  resolver. No entanto, não é a hora de comentar sobre a aplicação.
+Como mencionado, o que se propõe a ser solucionado com este projeto é remover a experiência rasa nos aplicativos de streaming, possibilitando a descoberta de novos artistas e músicas, acabando assim com a monotonia criada pelo algoritmo dessas plataformas. 
 
-Descreva também o contexto em que essa aplicação será usada, se  houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de  fato existir, pois ainda não é a hora de apresentar requisitos  detalhados ou projetos.
-
-Nesse momento, o grupo pode optar por fazer uso  de ferramentas como Design Thinking, que permite um olhar de ponta a ponta para o problema.
-
-> **Links Úteis**:
-> - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
-> - [Matriz Certezas, Suposições e Dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
-> - [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
 
 ## Objetivos
 
-Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima. 
+O objetivo deste trabalho é a criação de uma plataforma de sugestões de músicas. Utilizando a API do Spotify, a aplicação deverá sugerir músicas de forma personalizada ao usuário de acordo com o gosto musical do mesmo. 
 
-Apresente também alguns (pelo menos 2) objetivos específicos dependendo de onde você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar no seu trabalho.
- 
-> **Links Úteis**:
-> - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
+Esta plataforma deverá fornecer:
+
+• Sugestões de novos artistas, álbuns e singles de acordo com o gosto musical do usuário.
+• Permitir a criação de playlists com sugestões personalizadas.
+• Integração com a conta do Spotify.
+
 
 ## Justificativa
 
-Descreva a importância ou a motivação para trabalhar com esta aplicação que você escolheu. Indique as razões pelas quais você escolheu seus objetivos específicos ou as razões para aprofundar em certos aspectos do software.
-
-O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estatísticos, que podem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pelo grupo.
-
-> **Links Úteis**:
-> - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
+Acessibilidade Musical: Proporcionar acesso instantâneo a uma vasta biblioteca de músicas de diferentes gêneros e artistas. Isso democratiza o acesso à música, permitindo que pessoas em todo o mundo desfrutem de uma variedade incomparável de estilos musicais.
+Combate à Pirataria: Ao oferecer uma alternativa acessível e legal ao compartilhamento ilegal de músicas, garante que artistas e detentores de direitos autorais sejam devidamente remunerados por seu trabalho.
+Apoio aos Artistas: Desempenhar um papel importante na indústria musical ao proporcionar uma plataforma para artistas independentes e estabelecidos alcançarem um público global. Através de parcerias e ferramentas de análise, os artistas podem entender melhor seu público e melhorar sua carreira.
+Descoberta de Novas Músicas: oferecer recursos de recomendação e playlists personalizadas, tornando mais fácil para os ouvintes descobrirem novas músicas e artistas que correspondem aos seus gostos. Isso apoia a diversidade musical e ajuda a promover talentos emergentes.
 
 ## Público-Alvo
 
-Descreva quem serão as pessoas que usarão a sua aplicação indicando os diferentes perfis. O objetivo aqui não é definir quem serão os clientes ou quais serão os papéis dos usuários na aplicação. A ideia é, dentro do possível, conhecer um pouco mais sobre o perfil dos usuários: conhecimentos prévios, relação com a tecnologia, relações
-hierárquicas, etc.
+O projeto possui como público-alvo pessoas sem distinção de gênero e faixa etária, que utilizem frequentemente o aplicativo Spotify para consumir músicas e descobrir novos artistas. Entretanto, todos os ouvintes de música poderão se beneficiar com o tipo de plataforma proposto.
 
-Adicione informações sobre o público-alvo por meio de uma descrição textual, diagramas de personas e mapa de stakeholders.
-
-> **Links Úteis**:
-> - [Público-alvo](https://blog.hotmart.com/pt-br/publico-alvo/)
-> - [Como definir o público alvo](https://exame.com/pme/5-dicas-essenciais-para-definir-o-publico-alvo-do-seu-negocio/)
-> - [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
-> - [Qual a diferença entre público-alvo e persona?](https://rockcontent.com/blog/diferenca-publico-alvo-e-persona/)
