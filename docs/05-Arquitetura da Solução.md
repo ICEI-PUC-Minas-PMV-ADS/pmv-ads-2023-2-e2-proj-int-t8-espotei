@@ -5,18 +5,30 @@
 Nesta seção são apresentados os detalhes técnicos da solução criada pela equipe, tratando dos componentes que fazem parte da solução e do ambiente de hospedagem da solução.
 
 ## Diagrama de Componentes
+
 ![ArquiteturaComponentes drawio](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t8-espotei/assets/72924198/1e1c9a26-ca51-47ff-95dd-c991571eecc4)
 
 
 ## Diagrama de Classes & Projeto da Base de Dados
 
+
 O projeto da base de dados corresponde à representação das entidades e relacionamentos identificadas no Modelo ER, no formato de tabelas, com colunas e chaves primárias/estrangeiras necessárias para representar corretamente as restrições de integridade.
  
 Para mais informações, consulte o microfundamento "Modelagem de Dados".
 
+
 ![ArquiteturaDatabaseEspotei  drawio](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t8-espotei/assets/72924198/e275b79d-2fae-4e17-80cd-2caf8934fb2c)
 
 
+## Modelo ER (Projeto Conceitual)
+
+
+O Modelo ER representa através de um diagrama como as entidades (coisas, objetos) se relacionam entre si na aplicação interativa.
+
+
+![MER](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t8-espotei/assets/113072581/0646e1bf-ef72-45eb-8f1f-54b95fec0d0e)
+
+ 
 ## Tecnologias Utilizadas
 
 Nesse projeto será utilizado, para o desenvolvimento do front-end, o ecossistema Javascript, mais especificamente, a biblioteca do React.js, uma biblioteca robusta voltada para o desenvolvimento WEB. Para persistência dos dados que forem necessários, dados de login e sessão de usuário, dados de músicas, artistas e recomendações avaliações, dentre outros, será utilizado o sistema de Localstorage do navegador, onde dados podem ser armazenados em formato de texto simples ou JSON. A hospedagem do front-end será feita através da plataforma Vercel, esta possui um plano de hospedagem gratuito e amplamente utilizado.
