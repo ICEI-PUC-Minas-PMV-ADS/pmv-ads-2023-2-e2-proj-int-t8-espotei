@@ -1,0 +1,6 @@
+﻿10/10/2023 - Aaron C.
+Adicionado o primeiro controlador do projeto e suas rotas.
+A arquitetura seguiu o seguinte padrão Endpoint -> Repositorio -> Contexto -> Banco de Dados, sendo todas 
+as validações relevantes sobre os objetos de dados transferidos (DTO's) sendo feitas na camada de repositório.
+
+/*Adicione linhas no topo deste arquivo com descrições detalhadas sobre as implementações feitas caso necessário*/
