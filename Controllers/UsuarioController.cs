@@ -1,26 +1,27 @@
 ﻿using Espotei.Models;
 using Espotei.Repositories;
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json.Linq;
 using System.Net;
 
 namespace Espotei.Controllers
 {
     [Route("espotei/usuario")]
     public class UsuarioController : Controller
-    {
-        [Route("criarConta")]
-        public async Task<ActionResult> criarUsuario([FromBody] Usuario usuario)
+    {        
+        [HttpGet("criarConta")]
+        public async Task<ActionResult> CriarUsuarioAsync([FromBody]Usuario usuarioASerCriado)
         {
             try
-            {
+            {               
                 UsuarioRepositorie repo = new UsuarioRepositorie();
-                Usuario usuarioCriado = await repo.CriarUsuarioAsync(usuario);
+                var usuario = await repo.CriarUsuarioAsync(usuarioASerCriado);
 
                 return new ContentResult
                 {
                     StatusCode = (int)HttpStatusCode.OK,
                     ContentType = Azure.Core.ContentType.ApplicationJson.ToString(),
-                    Content = System.Text.Json.JsonSerializer.Serialize(usuarioCriado),
+                    Content = System.Text.Json.JsonSerializer.Serialize(usuario),
                 };
             }
             catch (Exception e)
@@ -34,7 +35,7 @@ namespace Espotei.Controllers
             }
         }
 
-        [Route("editarConta")]
+        [HttpPut("editarConta")]
         public async Task<ActionResult> editarUsuario([FromBody] Usuario usuario)
         {
             try
@@ -60,7 +61,7 @@ namespace Espotei.Controllers
             }
         }
 
-        [Route("excluirConta")]
+        [HttpDelete("excluirConta")]
         public async Task<ActionResult> excluirUsuario([FromBody] Usuario usuario)
         {
             try

@@ -46,7 +46,7 @@ namespace Espotei.Repositories
 
             UsuarioContext contexto = new UsuarioContext();
             await contexto.CriarUsuario(usuarioASerCriado);
-            Usuario usuarioEditado = contexto.GetUsuario(null, usuarioASerCriado.login).Result;
+            Usuario usuarioEditado = contexto.GetUsuario(null, usuarioASerCriado.Login).Result;
 
             return usuarioASerCriado;
         }
@@ -58,7 +58,7 @@ namespace Espotei.Repositories
 
             UsuarioContext contexto = new UsuarioContext();
             await contexto.EditarUsuario(usuarioASerEditado);
-            Usuario usuarioEditado = contexto.GetUsuario(null, usuarioASerEditado.login).Result;
+            Usuario usuarioEditado = contexto.GetUsuario(null, usuarioASerEditado.Login).Result;
 
             return usuarioEditado;
         }
@@ -70,8 +70,8 @@ namespace Espotei.Repositories
                 if (usuarioASerExcluido != null)
                 {
                     UsuarioContext contexto = new UsuarioContext();
-                    await contexto.ExcluirUsuario(usuarioASerExcluido.id);
-                    Usuario usuarioEditado = contexto.GetUsuario(null, usuarioASerExcluido.login).Result;
+                    await contexto.ExcluirUsuario(usuarioASerExcluido.Id);
+                    Usuario usuarioEditado = contexto.GetUsuario(null, usuarioASerExcluido.Login).Result;
 
                     return true;
                 }
@@ -87,25 +87,25 @@ namespace Espotei.Repositories
         private static void ValidarUsuario(Usuario usuarioASerCriado)
         {
             // Validações de login
-            if (usuarioASerCriado.login.Length < 5)
+            if (usuarioASerCriado.Login.Length < 5)
                 throw new Exception("O login deve conter mais de 5 caracteres.");
 
             var contemNumeros = false;
             char[] numeros = { '0', '1', '2', '3', '4', '5', '6', '7', '8', '9' };
-            foreach (char caractereSenha in usuarioASerCriado.login)
+            foreach (char caractereSenha in usuarioASerCriado.Login)
                 foreach (char numeroStr in numeros)
                     if (caractereSenha == numeroStr)
                         contemNumeros = true;
 
-            if (!contemNumeros)
-                throw new Exception("O login deve conter pelo menos um número.");
+            //if (!contemNumeros)
+            //    throw new Exception("O login deve conter pelo menos um número.");
 
             // Validações de senha
-            if (usuarioASerCriado.senha.Length < 5)
+            if (usuarioASerCriado.Senha.Length < 5)
                 throw new Exception("A senha deve conter mais de 5 caracteres.");
 
             int temCaractere = -1;
-            if (int.TryParse(usuarioASerCriado.senha, System.Globalization.NumberStyles.Number, null, out temCaractere))
+            if (int.TryParse(usuarioASerCriado.Senha, System.Globalization.NumberStyles.Number, null, out temCaractere))
                 if (temCaractere > 0)
                     throw new Exception("A senha deve conter pelo menos um caractere.");
         }

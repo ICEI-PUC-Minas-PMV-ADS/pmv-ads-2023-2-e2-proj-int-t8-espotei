@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34031.279
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Espotei", "Espotei.csproj", "{877FEEF9-F4E0-4ACB-AA2D-87F7024D3AB0}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "EspoteiScripts", "..\EspoteiScripts\EspoteiScripts.sqlproj", "{2BC4300C-A516-4CDB-8B1F-E418CB6740D6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{877FEEF9-F4E0-4ACB-AA2D-87F7024D3AB0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{877FEEF9-F4E0-4ACB-AA2D-87F7024D3AB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{877FEEF9-F4E0-4ACB-AA2D-87F7024D3AB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{877FEEF9-F4E0-4ACB-AA2D-87F7024D3AB0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2BC4300C-A516-4CDB-8B1F-E418CB6740D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BC4300C-A516-4CDB-8B1F-E418CB6740D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2BC4300C-A516-4CDB-8B1F-E418CB6740D6}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{2BC4300C-A516-4CDB-8B1F-E418CB6740D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2BC4300C-A516-4CDB-8B1F-E418CB6740D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2BC4300C-A516-4CDB-8B1F-E418CB6740D6}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6222567C-C36A-482B-ADC4-77C44BC4B580}
+	EndGlobalSection
+EndGlobal

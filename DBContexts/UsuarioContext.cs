@@ -13,7 +13,7 @@ namespace Espotei.DBContexts
 
         #region Construtor
         public UsuarioContext() {
-            this.connectionString = new ConfigurationManager().GetConnectionString("default");
+            this.connectionString = @"connection timeout=600; Persist Security Info=True;Initial Catalog=DBBaseTeste;Data Source=(LocalDb)\BaseTeste";
         }
         #endregion        
 
@@ -24,20 +24,18 @@ namespace Espotei.DBContexts
             {
                 await using (var connection = new SqlConnection(this.connectionString))
                 {
-                    await connection.ExecuteAsync("INSERT INTO [Usuario] VALUES(@login, @senha)",
+                    await connection.ExecuteAsync("INSERT INTO [Usuario](LOGIN, SENHA) VALUES(@login, @senha)",
                     new
                     {
-                        login = usuario.login,
-                        senha = usuario.senha,
+                        login = usuario.Login,
+                        senha = usuario.Senha,                        
                     });
                 }
-
                 return true;
             }
-            catch (Exception)
+            catch (Exception e)
             {
-
-                throw;
+                throw e; 
             }
         }
 
@@ -48,15 +46,15 @@ namespace Espotei.DBContexts
                 UsuarioDB usuarioDb;
                 if (id != null)
                     await using (var connection = new SqlConnection(this.connectionString))
-                        usuarioDb = await connection.QueryFirstOrDefaultAsync<UsuarioDB>("SELECT [Id], [Login], [Senha] FROM [Category] WHERE [Id]=@id", new { id = id });
+                        usuarioDb = await connection.QueryFirstOrDefaultAsync<UsuarioDB>("SELECT [Id], [Login], [Senha] FROM [Usuario] WHERE [Id]=@id", new { id = id });
                 else
                     await using (var connection = new SqlConnection(this.connectionString))
                         usuarioDb = await connection.QueryFirstOrDefaultAsync<UsuarioDB>("SELECT [Id], [Login], [Senha] FROM [Usuario] WHERE [Login]=@login", new { login = login });
 
                 Usuario usuario;
                 usuario = usuarioDb == null ?
-                    new Models.Usuario { id = 0, login = "", senha = "", }
-                    : new Models.Usuario { id = usuarioDb.Id, login = usuarioDb.login, senha = usuarioDb.senha, };
+                    new Models.Usuario { Id = 0, Login = "", Senha = "", }
+                    : new Models.Usuario { Id = usuarioDb.Id, Login = usuarioDb.login, Senha = usuarioDb.senha, };
 
                 return usuario;
             }
@@ -73,7 +71,7 @@ namespace Espotei.DBContexts
                 await using (var connection = new SqlConnection(this.connectionString))
                 {
                     await connection.ExecuteAsync("UPDATE [Usuario] SET [Login]=@login, [Senha]=@senha, WHERE [Id]=@id",
-                        new { id = usuario.id, login = usuario.login, senha = usuario.senha });
+                        new { id = usuario.Id, login = usuario.Login, senha = usuario.Senha });
                 }
 
                 return true;

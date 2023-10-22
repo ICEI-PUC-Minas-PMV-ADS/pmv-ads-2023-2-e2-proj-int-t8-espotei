@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\aaron\\source\\repos\\dir-stat\\pmv-ads-2023-2-e2-proj-int-t8-espotei\\Espotei.csproj": {}
+    "C:\\Users\\aaron\\source\\repos\\espotei\\pmv-ads-2023-2-e2-proj-int-t8-espotei\\Espotei.csproj": {}
   },
   "projects": {
-    "C:\\Users\\aaron\\source\\repos\\dir-stat\\pmv-ads-2023-2-e2-proj-int-t8-espotei\\Espotei.csproj": {
+    "C:\\Users\\aaron\\source\\repos\\espotei\\pmv-ads-2023-2-e2-proj-int-t8-espotei\\Espotei.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\aaron\\source\\repos\\dir-stat\\pmv-ads-2023-2-e2-proj-int-t8-espotei\\Espotei.csproj",
+        "projectUniqueName": "C:\\Users\\aaron\\source\\repos\\espotei\\pmv-ads-2023-2-e2-proj-int-t8-espotei\\Espotei.csproj",
         "projectName": "Espotei",
-        "projectPath": "C:\\Users\\aaron\\source\\repos\\dir-stat\\pmv-ads-2023-2-e2-proj-int-t8-espotei\\Espotei.csproj",
+        "projectPath": "C:\\Users\\aaron\\source\\repos\\espotei\\pmv-ads-2023-2-e2-proj-int-t8-espotei\\Espotei.csproj",
         "packagesPath": "C:\\Users\\aaron\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\aaron\\source\\repos\\dir-stat\\pmv-ads-2023-2-e2-proj-int-t8-espotei\\obj\\",
+        "outputPath": "C:\\Users\\aaron\\source\\repos\\espotei\\pmv-ads-2023-2-e2-proj-int-t8-espotei\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\DevExpress 22.1\\Components\\Offline Packages",
@@ -70,6 +70,10 @@
             "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
               "target": "Package",
               "version": "[1.19.4, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
             }
           },
           "imports": [
